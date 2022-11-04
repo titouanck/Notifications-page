@@ -1,0 +1,255 @@
+// Reset CSS
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+a {
+	text-decoration: none;
+}
+
+
+// Fonts and colors
+@font-face {
+	font-family: "Plus Jakarta Sans";
+	src: url("../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+	font-weight: 500 800;
+}
+
+$hover: hsl(219, 85%, 26%);
+$new: hsl(1, 90%, 64%);
+
+$white: hsl(0, 0%, 100%);
+$veryLightGrayishBlue: hsl(210, 60%, 98%);
+$lightGrayishBlue1: hsl(211, 68%, 94%);
+$lightGrayishBlue2: hsl(205, 33%, 90%);
+$grayishBlue: hsl(219, 14%, 63%);
+$darkGrayishBlue: hsl(219, 12%, 42%);
+$veryDarkBlue: hsl(224, 21%, 14%);
+
+
+// Breakpoints
+// $down: 729px;
+// $up: 730px;
+$down: 430px;
+$up: 431px;
+
+
+// Vertical and horizontal alignement
+.parent-container {
+	display: table;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.child-container {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.content {
+	display: inline-block;
+	background-color: $white;
+}
+
+
+// Styles
+body {
+	font-family: "Plus Jakarta Sans", cursive, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	background-color: $lightGrayishBlue2;
+}
+
+a, .button {
+	transition: color .2s;
+
+	&:hover {
+		color: $hover;
+		cursor: pointer;
+	}
+}
+
+.content {	
+	@media screen and (max-width: $down) {
+		padding: 0 4.26vw;
+	}
+	@media screen and (min-width: $up) {
+		padding: 0 18.361px;
+		border-radius: 10px;
+	}
+	
+	width: 100%;
+	max-width: 730px;
+}
+
+.header__notifications__title,  .notification__text__name, .notification__text__object {
+	font-weight: 800;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media screen and (max-width: $down) {
+		margin: 6.6vw 0;
+	}
+	@media screen and (min-width: $up) {
+		margin: 28.446px 0;
+	}
+	
+	&__notifications {
+		@media screen and (max-width: $down) {
+			font-size: 5.2vw;
+		}
+		@media screen and (min-width: $up) {
+			font-size: 22.412px;
+		}
+
+		display: flex;
+		align-items: center;
+
+		&__number {
+			color: $white;
+			background-color: $hover;
+			border-radius: 25%;
+			
+			@media screen and (max-width: $down) {
+				width: 8.53vw;
+				height: 6.66vw;
+			}
+			@media screen and (min-width: $up) {
+				width: 36.764px;
+				height: 28.705px;
+			}
+		}
+	}
+
+	&__readButton {
+		@media screen and (max-width: $down) {
+			font-size: 3.7vw;
+		}
+		color: $darkGrayishBlue;
+	}
+}
+
+.notifications {
+	text-align: left;
+}
+
+.notification {
+	@media screen and (max-width: $down) {
+		padding: 4.2vw;
+		margin-bottom: 2.343vw;
+		border-radius: 2vw;
+	}
+	@media screen and (min-width: $up) {
+		padding: 18.102px;
+		margin-bottom: 10.09855px;
+		border-radius: 8.62px;
+	}
+
+	display: flex;
+	align-items: flex-start;
+	background-color: $veryLightGrayishBlue;
+
+	&__profilePic {
+		@media screen and (max-width: $down) {
+			width: 10.4vw;
+			margin-right: 3.7vw;
+		}
+		@media screen and (min-width: $up) {
+			width: 44.824px;
+			margin-right: 15.947px;
+		}
+	}
+
+	&__text {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		align-items: flex-start;
+
+		@media screen and (max-width: $down) {
+			font-size: 3.7vw;
+			line-height: 4.94vw;
+		}
+		@media screen and (min-width: $up) {
+			font-size: 15.947px;
+			line-height: 21.2969px;
+		}
+
+		&__name {
+			color: $veryDarkBlue;
+		}
+		
+		&__event, &__object, &__message {
+			color: $darkGrayishBlue;
+		}
+		
+		&__illustration {
+			@media screen and (max-width: $down) {
+				margin-left: 8vw;
+				width: 10.4vw;
+			}
+			@media screen and (min-width: $up) {
+				margin-left: 34.48px;
+				width: 44.824px;
+			}
+
+			&:hover {
+				outline: 2px solid $lightGrayishBlue1;
+				border-radius: 15%;
+				cursor: pointer;
+			}
+		}
+
+		&__new {
+			display: inline-block;
+
+			@media screen and (max-width: $down) {
+				margin: 0.3vw 1vw;
+				width: 2.13vw;
+				height: 2.13vw;
+			}
+			@media screen and (min-width: $up) {
+				margin: 1.293px 4.31px;
+				width: 9.18px;
+				height: 9.18px;
+			}
+			background-color: $new;
+			border-radius: 100%;
+		}
+		
+		&__date {
+			display: block;
+			color: $grayishBlue;
+		}
+		
+		&__message {
+			@media screen and (max-width: $down) {
+				margin-top: 2.4vw;
+				font-size: 3.65vw;
+				padding: 4.2vw;
+				line-height: 4.3vw 4vw;
+				border-radius: 1vw;
+			}
+			@media screen and (min-width: $up) {
+				margin-top: 10.344px;
+				font-size: 15.732px;
+				padding: 18.102px;
+				line-height: 18.533px 17.24px;
+				border-radius: 4.31px;
+			}
+
+			display: block;
+			border: 0.5px solid $darkGrayishBlue;
+			transition: color .2s, background-color .2s, border-color .2s;
+			
+			&:hover {
+				color: $darkGrayishBlue;
+				border-color: transparent;
+				background-color: $lightGrayishBlue1;
+			}
+		}
+	}
+	
+}
