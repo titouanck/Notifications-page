@@ -29,7 +29,7 @@ a {
 body {
   font-family: "Plus Jakarta Sans", cursive, Arial, Helvetica, sans-serif;
   font-weight: 500;
-  background-color: hsl(205deg, 33%, 90%);
+  background-color: #f9fafe;
 }
 
 a, .button {
@@ -42,7 +42,7 @@ a:hover, .button:hover {
 
 .content {
   width: 100%;
-  max-width: 730px;
+  max-width: 657px;
 }
 @media screen and (max-width: 430px) {
   .content {
@@ -51,8 +51,8 @@ a:hover, .button:hover {
 }
 @media screen and (min-width: 431px) {
   .content {
-    padding: 0 18.361px;
-    border-radius: 10px;
+    padding: 0 16.5249px;
+    border-radius: 9px;
   }
 }
 
@@ -72,7 +72,7 @@ a:hover, .button:hover {
 }
 @media screen and (min-width: 431px) {
   .header {
-    margin: 28.446px 0;
+    margin: 25.6014px 0;
   }
 }
 .header__notifications {
@@ -86,7 +86,7 @@ a:hover, .button:hover {
 }
 @media screen and (min-width: 431px) {
   .header__notifications {
-    font-size: 22.412px;
+    font-size: 20.1708px;
   }
 }
 .header__notifications__number {
@@ -96,14 +96,14 @@ a:hover, .button:hover {
 }
 @media screen and (max-width: 430px) {
   .header__notifications__number {
-    width: 8.53vw;
-    height: 6.66vw;
+    font-size: 3.876vw;
+    padding: 0.775vw 2.842vw;
   }
 }
 @media screen and (min-width: 431px) {
   .header__notifications__number {
-    width: 36.764px;
-    height: 28.705px;
+    padding: 3px 11px;
+    font-size: 15px;
   }
 }
 .header__readButton {
@@ -133,9 +133,9 @@ a:hover, .button:hover {
 }
 @media screen and (min-width: 431px) {
   .notification {
-    padding: 18.102px;
-    margin-bottom: 10.09855px;
-    border-radius: 8.62px;
+    padding: 16.2918px;
+    margin-bottom: 9.088695px;
+    border-radius: 7.758px;
   }
 }
 @media screen and (max-width: 430px) {
@@ -146,8 +146,8 @@ a:hover, .button:hover {
 }
 @media screen and (min-width: 431px) {
   .notification__profilePic {
-    width: 44.824px;
-    margin-right: 15.947px;
+    width: 40.3416px;
+    margin-right: 14.3523px;
   }
 }
 .notification__text {
@@ -164,8 +164,8 @@ a:hover, .button:hover {
 }
 @media screen and (min-width: 431px) {
   .notification__text {
-    font-size: 15.947px;
-    line-height: 21.2969px;
+    font-size: 14.3523px;
+    line-height: 19.16721px;
   }
 }
 .notification__text__name {
@@ -182,8 +182,8 @@ a:hover, .button:hover {
 }
 @media screen and (min-width: 431px) {
   .notification__text__illustration {
-    margin-left: 34.48px;
-    width: 44.824px;
+    margin-left: 31.032px;
+    width: 40.3416px;
   }
 }
 .notification__text__illustration:hover {
@@ -205,9 +205,9 @@ a:hover, .button:hover {
 }
 @media screen and (min-width: 431px) {
   .notification__text__new {
-    margin: 1.293px 4.31px;
-    width: 9.18px;
-    height: 9.18px;
+    margin: 1.1637px 3.879px;
+    width: 8.262px;
+    height: 8.262px;
   }
 }
 .notification__text__date {
@@ -230,11 +230,11 @@ a:hover, .button:hover {
 }
 @media screen and (min-width: 431px) {
   .notification__text__message {
-    margin-top: 10.344px;
-    font-size: 15.732px;
-    padding: 18.102px;
-    line-height: 18.533px 17.24px;
-    border-radius: 4.31px;
+    margin-top: 9.3096px;
+    font-size: 14.85px;
+    padding: 16.2918px;
+    line-height: 16.6797px 15.516px;
+    border-radius: 3.879px;
   }
 }
 .notification__text__message:hover {
